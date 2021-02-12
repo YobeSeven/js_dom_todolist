@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOMMEZ VOTRE SITE -->
+    <title>NOM VOULU</title>
+    <!-- TJRS LIER LE CSS -->
+    <link rel="stylesheet" href="./public/css/app.css">
+
+</head>
+
+<!-- src/scss/modules/_body.scss -->
+<body>
+
+<!-- src/scss/modules/_section.scss -->
+<section class="section-todo text-center ">
+
+    <h4 class="titre-principale ">Ma ToDo List</h4>
+
+    <div class="div-ecrire-tache-debut mt-3">
+
+        <input class="toDo" placeholder="Votre tâche" type="text">
+        <button class="saveToDo" type="submit">Sauvegarder</button>
+
+    </div>
+
+    <div class="div-input-tout-bouton mt-5">
+
+        <div class="div-input-placement">
+
+            <ul class="liste-nul">
+                <li class="li-a-copier list-unstyled">
+                    <input class="tacheTransition"  type="text" disabled >
+                </li>
+            </ul>
+
+            <p class="question-un">Où devez-vous le mettre ?</p>
+
+            <button class="bouton aFaire m-3">à faire</button>
+            <button class="bouton enCours m-3">en cours</button>
+            <button class="bouton terminer m-3">terminer</button>
+
+        </div>
+
+        <div class="div-changement-supprimer">
+
+            <p class="question-deux">Pour changer son contenu ou le supprimer</p>
+
+            <button class="modifier m-3">modifier</button>
+            <button class="supprimer m-3">supprimer</button>
+
+        </div>
+    </div>
+
+    <div class="row div-toute-categorie">
+
+        <div class="div-categorie-unique leTouT col-3">
+
+            <h6 class="titre-categorie">le tout</h6>
+
+            <ul class="liste liste-tout">
+ 
+            </ul>
+
+        </div>
+    
+        <div class="div-categorie-unique aFairE col-3">
+
+            <h6 class="titre-categorie">à faire</h6>
+
+            <ul class="liste liste-a-faire">
+
+            </ul>
+
+        </div>
+    
+        <div class="div-categorie-unique enCourS col-3">
+
+            <h6 class="titre-categorie">en cours</h6>
+
+            <ul class="liste liste-en-cours">
+
+            </ul>
+
+        </div>
+        
+        <div class="div-categorie-unique termineR col-3">
+
+            <h6 class="titre-categorie">terminer</h6>
+
+            <ul class="liste liste-terminer">
+                <li class="list-unstyled">
+                    <input type="text" name="" id="" disabled><button class="bouton-reglage">Reglage</button>
+                </li>
+            </ul>
+
+        </div>
+    
+    </div>
+
+    <button class="toutSupprimer">tout supprimer</button>
+
+</section>
+
+
+<!-- Votre JS ; JQuery et bootstrap , tjrs à la toute fin du body -->
+
+<script src="./public/js/app.js"></script>
+
+                    <!-- JQuery -->
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+    
+                    <!-- bootstrap -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>
